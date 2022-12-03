@@ -4,13 +4,16 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"
+    tools:context=".SplashActivity"
     android:orientation="vertical"
     android:gravity="center">
 
-    <TextView
+    <com.airbnb.lottie.LottieAnimationView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Main화면" />
+        android:id="@+id/splash_image"
+        app:lottie_rawRes="@raw/vehicle_morphing"
+        app:lottie_autoPlay="true"/>
+
 
 </LinearLayout>
