@@ -18,5 +18,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Main화면" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Lyu페이지"
+        android:id="@+id/lyu"/>
 
 </LinearLayout>

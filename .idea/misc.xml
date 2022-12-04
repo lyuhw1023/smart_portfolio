@@ -4,8 +4,14 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Users/lg/AndroidStudioProjects/SmartPortfolio/app/src/main/res/layout/activity_login.xml" value="0.35280797101449274" />
+        <entry key="..\:/Users/lg/AndroidStudioProjects/SmartPortfolio/app/src/main/res/layout/activity_lyuhyewon.xml" value="0.1" />
         <entry key="..\:/Users/lg/AndroidStudioProjects/SmartPortfolio/app/src/main/res/layout/activity_main.xml" value="0.1" />
         <entry key="..\:/Users/lg/AndroidStudioProjects/SmartPortfolio/app/src/main/res/layout/activity_splash.xml" value="0.1" />
+        <entry key="..\:/Users/lg/AndroidStudioProjects/SmartPortfolio/app/src/main/res/layout/fragment_intro.xml" value="0.1" />
+        <entry key="..\:/Users/lg/AndroidStudioProjects/SmartPortfolio/app/src/main/res/layout/fragment_school.xml" value="0.1" />
+        <entry key="..\:/Users/lg/AndroidStudioProjects/SmartPortfolio/app/src/main/res/layout/fragment_scroe.xml" value="0.1" />
+        <entry key="..\:/Users/lg/AndroidStudioProjects/SmartPortfolio/app/src/main/res/layout/naviigation_header.xml" value="0.1" />
+        <entry key="..\:/Users/lg/AndroidStudioProjects/SmartPortfolio/app/src/main/res/menu/menu_main.xml" value="0.1" />
       </map>
     </option>
   </component>
