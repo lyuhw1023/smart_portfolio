@@ -6,16 +6,26 @@ import android.os.Bundle
 import android.util.Log
 import android.view.Menu
 import android.view.MenuItem
+import androidx.appcompat.app.ActionBarDrawerToggle
 import androidx.appcompat.widget.SearchView
 import kr.ac.hallym.smartportfolio.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
     lateinit var binding: ActivityMainBinding
+    lateinit var toggle: ActionBarDrawerToggle
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         //setContentView(R.layout.activity_main)
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
+
+        toggle = ActionBarDrawerToggle(this, binding.drawer, R.string.drawer_opened, R.string.drawer_closed)
+        toggle.syncState()
+
+        binding.mainDrawerView.setNavigationItemSelectedListener {
+            Log.d("lyu", "navigation item is clicked: ${it.title}")
+            true
+        }
 
         binding.lyu.setOnClickListener{
             val intent: Intent = Intent(this, Lyuhyewon::class.java)
