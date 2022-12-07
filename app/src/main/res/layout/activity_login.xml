@@ -30,7 +30,7 @@
         android:id="@+id/loginButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="login"
+        android:text="보러가기"
         android:textSize="25dp"/>
 
 
