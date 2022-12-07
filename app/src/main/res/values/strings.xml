@@ -16,4 +16,36 @@
 \t소개  :  https://lyuhw1023.github.io</string>
     <string name="intro4">
 \t이메일  :  lyuhw11023@gmail.com</string>
+
+    <string name="scoreName">
+과목명\n
+이산구조론\n
+자바프로그래밍1\n
+컴퓨팅사고와문제해결\n
+선형대수\n
+창의코딩웹\n
+자료구조\n
+C프로그래밍\n
+데이터사이언스기초\n
+데이터베이스기초\n
+알고리즘\n
+인공지능\n
+웹프로그래밍\n
+
+</string>
+    <string name="score">
+성적\n
+A+\n
+A0\n
+A+\n
+A+\n
+A+\n
+A0\n
+A0\n
+A+\n
+A+\n
+A+\n
+A0\n
+A+\n
+</string>
 </resources>
