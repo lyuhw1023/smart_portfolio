@@ -22,12 +22,13 @@ class MainActivity : AppCompatActivity() {
         setSupportActionBar(binding.toolbar)
 
         toggle = ActionBarDrawerToggle(this, binding.drawer, R.string.drawer_opened, R.string.drawer_closed)
+        supportActionBar?.setDisplayHomeAsUpEnabled(true)
         toggle.syncState()
 
-        binding.mainDrawerView.setNavigationItemSelectedListener {
+        /*binding.mainDrawerView.setNavigationItemSelectedListener {
             Log.d("lyu", "navigation item is clicked: ${it.title}")
             true
-        }
+        }*/
 
         binding.lyu.setOnClickListener{
             val intent: Intent = Intent(this, Lyuhyewon::class.java)
@@ -55,11 +56,10 @@ class MainActivity : AppCompatActivity() {
         return super.onCreateOptionsMenu(menu)
     }
 
-    override fun onOptionsItemSelected(item: MenuItem): Boolean = when (item.itemId){
-        R.id.menu_help  -> {
-            Log.d("lyu", "help")
-            true
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        if(toggle.onOptionsItemSelected(item)){
+            return true
         }
-        else -> super.onOptionsItemSelected(item)
+        return super.onOptionsItemSelected(item)
     }
 }
