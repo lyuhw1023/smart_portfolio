@@ -3,17 +3,27 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/lg/AndroidStudioProjects/SmartPortfolio/app/src/main/res/drawable/timeline_shape1.xml" value="0.158" />
+        <entry key="..\:/Users/lg/AndroidStudioProjects/SmartPortfolio/app/src/main/res/drawable/timeline_shape2.xml" value="0.1" />
+        <entry key="..\:/Users/lg/AndroidStudioProjects/SmartPortfolio/app/src/main/res/drawable/timeline_shape3.xml" value="0.1" />
+        <entry key="..\:/Users/lg/AndroidStudioProjects/SmartPortfolio/app/src/main/res/drawable/timeline_shape4.xml" value="0.1" />
+        <entry key="..\:/Users/lg/AndroidStudioProjects/SmartPortfolio/app/src/main/res/drawable/timeline_shape5.xml" value="0.1" />
+        <entry key="..\:/Users/lg/AndroidStudioProjects/SmartPortfolio/app/src/main/res/drawable/timeline_shape6.xml" value="0.1" />
         <entry key="..\:/Users/lg/AndroidStudioProjects/SmartPortfolio/app/src/main/res/layout/activity_hyewon.xml" value="0.1" />
         <entry key="..\:/Users/lg/AndroidStudioProjects/SmartPortfolio/app/src/main/res/layout/activity_login.xml" value="0.35280797101449274" />
         <entry key="..\:/Users/lg/AndroidStudioProjects/SmartPortfolio/app/src/main/res/layout/activity_lyuhyewon.xml" value="0.1" />
-        <entry key="..\:/Users/lg/AndroidStudioProjects/SmartPortfolio/app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="..\:/Users/lg/AndroidStudioProjects/SmartPortfolio/app/src/main/res/layout/activity_main.xml" value="0.3333333333333333" />
+        <entry key="..\:/Users/lg/AndroidStudioProjects/SmartPortfolio/app/src/main/res/layout/activity_project_main.xml" value="0.3333333333333333" />
         <entry key="..\:/Users/lg/AndroidStudioProjects/SmartPortfolio/app/src/main/res/layout/activity_splash.xml" value="0.1" />
+        <entry key="..\:/Users/lg/AndroidStudioProjects/SmartPortfolio/app/src/main/res/layout/activity_web_view.xml" value="0.13240740740740742" />
+        <entry key="..\:/Users/lg/AndroidStudioProjects/SmartPortfolio/app/src/main/res/layout/card_layout.xml" value="0.1" />
         <entry key="..\:/Users/lg/AndroidStudioProjects/SmartPortfolio/app/src/main/res/layout/fragment_intro.xml" value="0.1" />
         <entry key="..\:/Users/lg/AndroidStudioProjects/SmartPortfolio/app/src/main/res/layout/fragment_school.xml" value="0.1" />
         <entry key="..\:/Users/lg/AndroidStudioProjects/SmartPortfolio/app/src/main/res/layout/fragment_score.xml" value="0.4466666666666667" />
         <entry key="..\:/Users/lg/AndroidStudioProjects/SmartPortfolio/app/src/main/res/layout/fragment_scroe.xml" value="0.1" />
         <entry key="..\:/Users/lg/AndroidStudioProjects/SmartPortfolio/app/src/main/res/layout/item_recyclerview.xml" value="0.1" />
         <entry key="..\:/Users/lg/AndroidStudioProjects/SmartPortfolio/app/src/main/res/layout/list_item.xml" value="0.1" />
+        <entry key="..\:/Users/lg/AndroidStudioProjects/SmartPortfolio/app/src/main/res/layout/main_text.xml" value="0.1" />
         <entry key="..\:/Users/lg/AndroidStudioProjects/SmartPortfolio/app/src/main/res/layout/navigation_header.xml" value="0.1" />
         <entry key="..\:/Users/lg/AndroidStudioProjects/SmartPortfolio/app/src/main/res/layout/naviigation_header.xml" value="0.1" />
         <entry key="..\:/Users/lg/AndroidStudioProjects/SmartPortfolio/app/src/main/res/layout/score_recyclerview.xml" value="0.1" />

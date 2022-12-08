@@ -133,13 +133,24 @@
                         android:src="@drawable/android"/>
                 </LinearLayout>
 
-
-                <Button
-                    android:layout_width="wrap_content"
+                <LinearLayout
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="lyu"
-                    android:id="@+id/lyu"
-                    android:layout_gravity="center"/>
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:layout_margin="20dp">
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Lyuhyewon 보러가기"
+                        android:id="@+id/lyu"
+                        android:layout_marginRight="10dp"/>
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Project 보러가기"
+                        android:id="@+id/project"/>
+                </LinearLayout>
 
             </LinearLayout>
 

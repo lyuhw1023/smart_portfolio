@@ -35,6 +35,10 @@ class MainActivity : AppCompatActivity() {
             val intent: Intent = Intent(this, Lyuhyewon::class.java)
             startActivity(intent)
         }
+        binding.project.setOnClickListener{
+            val intent: Intent = Intent(this, ProjectMain::class.java)
+            startActivity(intent)
+        }
     }
 
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {
