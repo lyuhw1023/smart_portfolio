@@ -9,6 +9,7 @@ import android.view.MenuItem
 import androidx.appcompat.app.ActionBarDrawerToggle
 import androidx.appcompat.widget.SearchView
 import kr.ac.hallym.smartportfolio.databinding.ActivityMainBinding
+import kr.ac.hallym.smartportfolio.databinding.MainTextBinding
 
 class MainActivity : AppCompatActivity() {
     lateinit var binding: ActivityMainBinding
@@ -63,3 +64,5 @@ class MainActivity : AppCompatActivity() {
         return super.onOptionsItemSelected(item)
     }
 }
+
+//class MyViewHolder(val binding: MainTextBinding): .ViewHolder(binding.root)
