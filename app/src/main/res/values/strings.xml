@@ -31,4 +31,6 @@
     <string name="projectDetail4">2022년도 2학기에 수강중인 오픈소스sw개발도구활용 수업에서 진행한 정신 건강 관리 웹 서비스 입니다. 워드프레스를 통해 웹사이트를 개발하였습니다.
                                     \n저는 이 프로젝트에서 심리검사와 판매페이지를 맡아 개발하였습니다.</string>
     <string name="projectDetail5">아두이노를 활용한 자동 뷔페 용기입니다. 사용자가 일정 거리 이상 다가오게 되면 자동으로 뷔페의 용기가 열리도록 제작하였습니다.</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
