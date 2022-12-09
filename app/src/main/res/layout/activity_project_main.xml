@@ -5,14 +5,14 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     tools:context=".ProjectMain"
-    android:orientation="vertical"
-    android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+    android:orientation="vertical">
     <androidx.appcompat.widget.Toolbar
         android:layout_width="match_parent"
         android:layout_height="?attr/actionBarSize"
         android:background="?attr/colorPrimary"
         android:id="@+id/toolbar"
-        app:title="Project"/>
+        app:title="Project"
+        app:titleTextColor="@color/white"/>
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
