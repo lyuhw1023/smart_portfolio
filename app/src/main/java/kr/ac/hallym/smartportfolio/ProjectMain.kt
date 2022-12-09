@@ -3,6 +3,9 @@ package kr.ac.hallym.smartportfolio
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
+import android.view.Menu
+import androidx.appcompat.widget.SearchView
 import androidx.recyclerview.widget.DividerItemDecoration
 import androidx.recyclerview.widget.LinearLayoutManager
 import kr.ac.hallym.smartportfolio.databinding.ActivityProjectMainBinding
@@ -15,6 +18,9 @@ class ProjectMain : AppCompatActivity() {
         //setContentView(R.layout.activity_project_main)
         binding = ActivityProjectMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
+
+        setSupportActionBar(binding.toolbar)
+        supportActionBar?.setDisplayHomeAsUpEnabled(true)
 
         val contents1 = mutableListOf<String>("SmartPortfolio", "자리있나요?", "Healing Blog", "위로", "자동뷔페용기")
         val contents2 = mutableListOf<Int>(R.drawable.project1, R.drawable.project2, R.drawable.project3 , R.drawable.project4, R.drawable.project5)
@@ -33,5 +39,24 @@ class ProjectMain : AppCompatActivity() {
             DividerItemDecoration(this, LinearLayoutManager.VERTICAL)
         )
 
+    }
+    override fun onCreateOptionsMenu(menu: Menu?): Boolean {
+        menuInflater.inflate(R.menu.menu_main, menu)
+
+        val menuItem = menu?.findItem(R.id.menu_search)
+        val searchView = menuItem?.actionView as SearchView
+        searchView.setOnQueryTextListener(object : SearchView.OnQueryTextListener {
+            override fun onQueryTextSubmit(query: String?): Boolean {
+                Log.d("lyu", "$query will be searched")
+                return true
+            }
+
+            override fun onQueryTextChange(newText: String?): Boolean {
+                return true
+            }
+
+        })
+
+        return super.onCreateOptionsMenu(menu)
     }
 }
