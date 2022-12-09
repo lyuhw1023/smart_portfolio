@@ -23,7 +23,7 @@
             android:name=".hyewon"
             android:exported="false" />
         <activity
-            android:name=".Lyuhyewon"
+            android:name=".LyuHyeWon"
             android:exported="false" />
         <activity
             android:name=".login"

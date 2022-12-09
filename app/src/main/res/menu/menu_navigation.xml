@@ -24,8 +24,8 @@
                     android:id="@+id/navi_project"/>
                 <item
                     android:icon="@drawable/user"
-                    android:title="Lyuhyewon"
-                    android:id="@+id/navi_lyuhyewon"/>
+                    android:title="LyuHyeWon"
+                    android:id="@+id/navi_lyuHyeWon"/>
             </group>
         </menu>
     </item>

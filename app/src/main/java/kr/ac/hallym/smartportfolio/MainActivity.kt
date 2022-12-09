@@ -6,33 +6,35 @@ import android.os.Bundle
 import android.util.Log
 import android.view.Menu
 import android.view.MenuItem
+import android.widget.Toast
 import androidx.appcompat.app.ActionBarDrawerToggle
 import androidx.appcompat.widget.SearchView
+import com.google.android.material.navigation.NavigationView
+import com.google.android.material.navigation.NavigationView.OnNavigationItemSelectedListener
 import kr.ac.hallym.smartportfolio.databinding.ActivityMainBinding
 import kr.ac.hallym.smartportfolio.databinding.MainTextBinding
 
-class MainActivity : AppCompatActivity() {
+
+class MainActivity : AppCompatActivity(), OnNavigationItemSelectedListener {
     lateinit var binding: ActivityMainBinding
     lateinit var toggle: ActionBarDrawerToggle
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         //setContentView(R.layout.activity_main)
         binding = ActivityMainBinding.inflate(layoutInflater)
+        //네비게이션 뷰 객체 설정
+        binding.mainDrawerView.setNavigationItemSelectedListener(this)
         setContentView(binding.root)
-
         setSupportActionBar(binding.toolbar)
-
         toggle = ActionBarDrawerToggle(this, binding.drawer, R.string.drawer_opened, R.string.drawer_closed)
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
         toggle.syncState()
-
         /*binding.mainDrawerView.setNavigationItemSelectedListener {
             Log.d("lyu", "navigation item is clicked: ${it.title}")
             true
         }*/
-
         binding.lyu.setOnClickListener{
-            val intent: Intent = Intent(this, Lyuhyewon::class.java)
+            val intent: Intent = Intent(this, LyuHyeWon::class.java)
             startActivity(intent)
         }
         binding.project.setOnClickListener{
@@ -43,7 +45,6 @@ class MainActivity : AppCompatActivity() {
 
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {
         menuInflater.inflate(R.menu.menu_main, menu)
-
         val menuItem = menu?.findItem(R.id.menu_search)
         val searchView = menuItem?.actionView as SearchView
         searchView.setOnQueryTextListener(object : SearchView.OnQueryTextListener{
@@ -51,22 +52,40 @@ class MainActivity : AppCompatActivity() {
                 Log.d("lyu", "$query will be searched")
                 return true
             }
-
             override fun onQueryTextChange(newText: String?): Boolean {
                 return true
             }
-
         })
-
         return super.onCreateOptionsMenu(menu)
     }
-
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         if(toggle.onOptionsItemSelected(item)){
             return true
         }
         return super.onOptionsItemSelected(item)
     }
-}
 
+    override fun onNavigationItemSelected(item: MenuItem): Boolean {
+        when(item.itemId){
+            R.id.navi_home-> {
+                val intent = Intent(this,MainActivity::class.java)
+                startActivity(intent)
+                finish()
+            }
+            R.id.navi_project-> {
+                val intent = Intent(this,ProjectMain::class.java)
+                startActivity(intent)
+                finish()
+            }
+            R.id.navi_lyuHyeWon-> {
+                val intent = Intent(this,LyuHyeWon::class.java)
+                startActivity(intent)
+                finish()
+            }
+            R.id.navi_setting-> Toast.makeText(this,"item3 clicked",Toast.LENGTH_SHORT).show()
+        }
+        return false
+
+    }
+}
 //class MyViewHolder(val binding: MainTextBinding): .ViewHolder(binding.root)
