@@ -1,17 +1,45 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <item
-        android:icon="@drawable/home"
-        android:title="Home"/>
-    <item
-        android:icon="@drawable/folder"
-        android:title="Project"/>
-    <item
-        android:icon="@drawable/user"
-        android:title="Lyuhyewon"/>
-    <item
-        android:icon="@drawable/setting"
-        android:title="Setting"/>
 
+    <item android:title="Index">
+        <menu>
+            <group
+                android:id="@+id/menu_index"
+                android:checkableBehavior="single">
+                <item
+                    android:icon="@drawable/home"
+                    android:title="Home"
+                    android:id="@+id/navi_home"/>
+            </group>
+        </menu>
+    </item>
+
+    <item android:title="Portfolio">
+        <menu>
+            <group>
+                <item
+                    android:icon="@drawable/folder"
+                    android:title="Project"
+                    android:id="@+id/navi_project"/>
+                <item
+                    android:icon="@drawable/user"
+                    android:title="Lyuhyewon"
+                    android:id="@+id/navi_lyuhyewon"/>
+            </group>
+        </menu>
+    </item>
+
+    <item android:title="settings">
+        <menu>
+            <group
+                android:id="@+id/menu_settings"
+                android:checkableBehavior="single">
+                <item
+                    android:icon="@drawable/setting"
+                    android:title="Setting"
+                    android:id="@+id/navi_setting"/>
+            </group>
+        </menu>
+    </item>
 </menu>
