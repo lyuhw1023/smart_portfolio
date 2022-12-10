@@ -3,24 +3,20 @@
     xmlns:tools="http://schemas.android.com/tools"
     package="kr.ac.hallym.smartportfolio">
 
+    <uses-permission android:name="android.permission.INTERNET"/>
+
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@drawable/app_img"
         android:label="SmartPortfolio"
-        android:roundIcon="@mipmap/ic_launcher_round"
+        android:roundIcon="@drawable/app_img"
         android:supportsRtl="true"
         android:theme="@style/Theme.SmartPortfolio"
         tools:targetApi="31">
         <activity
-            android:name=".WebView"
-            android:exported="false" />
-        <activity
             android:name=".ProjectMain"
-            android:exported="false" />
-        <activity
-            android:name=".hyewon"
             android:exported="false" />
         <activity
             android:name=".LyuHyeWon"
