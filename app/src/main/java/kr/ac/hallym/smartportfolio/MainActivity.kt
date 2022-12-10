@@ -82,10 +82,24 @@ class MainActivity : AppCompatActivity(), OnNavigationItemSelectedListener {
                 startActivity(intent)
 
             }
-            R.id.navi_setting-> Toast.makeText(this,"item3 clicked",Toast.LENGTH_SHORT).show()
+            R.id.navi_setting-> Toast.makeText(this,"setting clicked",Toast.LENGTH_SHORT).show()
+            R.id.navi_logout-> {
+                val intent = Intent(this,login::class.java)
+                startActivity(intent)
+                finish()
+
+            }
         }
         return false
 
     }
 }
 //class MyViewHolder(val binding: MainTextBinding): .ViewHolder(binding.root)
+
+/*
+R.id.navi_lyuHyeWon-> {
+                val intent = Intent(this,LyuHyeWon::class.java)
+                startActivity(intent)
+                finish()
+            }
+ */
