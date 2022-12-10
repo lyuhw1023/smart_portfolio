@@ -64,7 +64,7 @@ class LyuHyeWon : AppCompatActivity() {
             R.id.menu_logout -> {
                 val intent = Intent(this, login::class.java)
                 startActivity(intent)
-                finish()
+                finishAffinity()
             }
         }
         return super.onOptionsItemSelected(item)

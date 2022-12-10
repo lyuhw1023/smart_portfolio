@@ -18,6 +18,7 @@ import kr.ac.hallym.smartportfolio.databinding.MainTextBinding
 class MainActivity : AppCompatActivity(), OnNavigationItemSelectedListener {
     lateinit var binding: ActivityMainBinding
     lateinit var toggle: ActionBarDrawerToggle
+    var initTime= 0L
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         //setContentView(R.layout.activity_main)
@@ -71,13 +72,14 @@ class MainActivity : AppCompatActivity(), OnNavigationItemSelectedListener {
             R.id.navi_logout-> {
                 val intent = Intent(this,login::class.java)
                 startActivity(intent)
-                finish()
+                finishAffinity()
 
             }
         }
         return false
 
     }
+
 }
 //class MyViewHolder(val binding: MainTextBinding): .ViewHolder(binding.root)
 

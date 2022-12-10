@@ -7,7 +7,10 @@ import android.view.View
 import android.view.ViewGroup
 import kr.ac.hallym.smartportfolio.databinding.FragmentScoreBinding
 import java.lang.reflect.Member
+
 class ScoreFragment : Fragment() {
+    lateinit var binding: FragmentScoreBinding
+
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
