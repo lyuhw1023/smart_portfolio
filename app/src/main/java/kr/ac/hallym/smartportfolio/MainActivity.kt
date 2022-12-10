@@ -79,7 +79,18 @@ class MainActivity : AppCompatActivity(), OnNavigationItemSelectedListener {
         return false
 
     }
-
+    //뒤로가기 버튼 이벤트 핸들러
+    override fun onBackPressed() {
+        //뒤로가기 버튼을 처음 눌렀거나 누른지 3초가 지났을 때
+        if(System.currentTimeMillis() - initTime > 3000){
+            Toast.makeText(this, "\t\t정말 종료하시겠습니까? \n종료하려면 한 번 더 누르세요!", Toast.LENGTH_SHORT).show()
+            initTime = System.currentTimeMillis()
+            return
+        }
+        if(System.currentTimeMillis() <= initTime + 3000){
+            finishAffinity()
+        }
+    }
 }
 //class MyViewHolder(val binding: MainTextBinding): .ViewHolder(binding.root)
 
