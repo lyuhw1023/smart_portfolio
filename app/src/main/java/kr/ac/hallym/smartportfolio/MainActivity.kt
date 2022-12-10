@@ -70,17 +70,17 @@ class MainActivity : AppCompatActivity(), OnNavigationItemSelectedListener {
             R.id.navi_home-> {
                 val intent = Intent(this,MainActivity::class.java)
                 startActivity(intent)
-                finish()
+
             }
             R.id.navi_project-> {
                 val intent = Intent(this,ProjectMain::class.java)
                 startActivity(intent)
-                finish()
+
             }
             R.id.navi_lyuHyeWon-> {
                 val intent = Intent(this,LyuHyeWon::class.java)
                 startActivity(intent)
-                finish()
+
             }
             R.id.navi_setting-> Toast.makeText(this,"item3 clicked",Toast.LENGTH_SHORT).show()
         }

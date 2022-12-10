@@ -27,14 +27,6 @@ class LyuHyeWon : AppCompatActivity() {
         setSupportActionBar(binding.toolbar)
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
 
-        toggle = ActionBarDrawerToggle(
-            this,
-            binding.drawer,
-            R.string.drawer_opened,
-            R.string.drawer_closed
-        )
-        toggle.syncState()
-
         /*binding.mainDrawerView.setNavigationItemSelectedListener {
             Log.d("lyu", "navigation item is clicked: ${it.title}")
             true
@@ -78,8 +70,12 @@ class LyuHyeWon : AppCompatActivity() {
     }
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
-        if (toggle.onOptionsItemSelected(item)) {
-            return true
+        val id = item.itemId
+        when(id){
+            android.R.id.home -> {
+                finish()
+                return true
+            }
         }
         return super.onOptionsItemSelected(item)
     }
