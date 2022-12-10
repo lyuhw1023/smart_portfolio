@@ -43,21 +43,6 @@ class MainActivity : AppCompatActivity(), OnNavigationItemSelectedListener {
         }
     }
 
-    override fun onCreateOptionsMenu(menu: Menu?): Boolean {
-        menuInflater.inflate(R.menu.menu_main, menu)
-        val menuItem = menu?.findItem(R.id.menu_search)
-        val searchView = menuItem?.actionView as SearchView
-        searchView.setOnQueryTextListener(object : SearchView.OnQueryTextListener{
-            override fun onQueryTextSubmit(query: String?): Boolean {
-                Log.d("lyu", "$query will be searched")
-                return true
-            }
-            override fun onQueryTextChange(newText: String?): Boolean {
-                return true
-            }
-        })
-        return super.onCreateOptionsMenu(menu)
-    }
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         if(toggle.onOptionsItemSelected(item)){
             return true

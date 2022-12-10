@@ -1,5 +1,6 @@
 package kr.ac.hallym.smartportfolio
 
+import android.content.Intent
 import android.os.Build.VERSION_CODES.S
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -51,30 +52,19 @@ class LyuHyeWon : AppCompatActivity() {
 
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {
         menuInflater.inflate(R.menu.menu_main, menu)
-
-        val menuItem = menu?.findItem(R.id.menu_search)
-        val searchView = menuItem?.actionView as SearchView
-        searchView.setOnQueryTextListener(object : SearchView.OnQueryTextListener {
-            override fun onQueryTextSubmit(query: String?): Boolean {
-                Log.d("lyu", "$query will be searched")
-                return true
-            }
-
-            override fun onQueryTextChange(newText: String?): Boolean {
-                return true
-            }
-
-        })
-
         return super.onCreateOptionsMenu(menu)
     }
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
-        val id = item.itemId
-        when(id){
+        when(item.itemId) {
             android.R.id.home -> {
                 finish()
                 return true
+            }
+            R.id.menu_logout -> {
+                val intent = Intent(this, login::class.java)
+                startActivity(intent)
+                finish()
             }
         }
         return super.onOptionsItemSelected(item)
