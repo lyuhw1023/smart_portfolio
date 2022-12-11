@@ -42,6 +42,10 @@ class MainActivity : AppCompatActivity(), OnNavigationItemSelectedListener {
             val intent: Intent = Intent(this, ProjectMain::class.java)
             startActivity(intent)
         }
+        binding.projectTest.setOnClickListener{
+            val intent: Intent = Intent(this, ProjectTest::class.java)
+            startActivity(intent)
+        }
     }
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
@@ -92,12 +96,3 @@ class MainActivity : AppCompatActivity(), OnNavigationItemSelectedListener {
         }
     }
 }
-//class MyViewHolder(val binding: MainTextBinding): .ViewHolder(binding.root)
-
-/*
-R.id.navi_lyuHyeWon-> {
-                val intent = Intent(this,LyuHyeWon::class.java)
-                startActivity(intent)
-                finish()
-            }
- */

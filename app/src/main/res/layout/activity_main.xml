@@ -137,8 +137,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="horizontal"
-                    android:gravity="center"
-                    android:layout_margin="20dp">
+                    android:gravity="center">
                     <Button
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -151,6 +150,12 @@
                         android:text="Project 보러가기"
                         android:id="@+id/project"/>
                 </LinearLayout>
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ProjectTest 보러가기"
+                    android:id="@+id/projectTest"
+                    android:layout_gravity="center"/>
 
             </LinearLayout>
 
@@ -169,39 +174,3 @@
         app:menu="@menu/menu_navigation"
         android:id="@+id/main_drawer_view"/>
 </androidx.drawerlayout.widget.DrawerLayout>
-
-    <!--LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical"
-        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
-        <androidx.appcompat.widget.Toolbar
-            android:layout_width="match_parent"
-            android:layout_height="?attr/actionBarSize"
-            android:background="?attr/colorPrimary"
-            android:id="@+id/toolbar"/>
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="vertical"
-            android:gravity="center"
-            android:background="#FFFFFF">
-
-            <ImageView
-                android:layout_width="match_parent"
-                android:layout_height="300dp"
-                android:src="@drawable/mainimage2"
-                android:id="@+id/hwImageView"/>
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Main화면"
-                android:textColor="#000000"/>
-            <Button
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Lyu페이지"
-                android:id="@+id/lyu"/>
-
-        </LinearLayout>
-    </LinearLayout-->
