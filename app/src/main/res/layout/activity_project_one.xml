@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProjectOne"
+    android:orientation="vertical">
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:id="@+id/toolbar"
+        app:title="SmartPorfolio"
+        app:titleTextColor="@color/white"/>
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="SmartProject"
+                android:textSize="30dp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:layout_margin="20dp" />
+            <ImageView
+                android:layout_width="300dp"
+                android:layout_height="200dp"
+                android:src="@drawable/project1"
+                android:layout_margin="20dp"
+                android:layout_gravity="center"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:text="개발 기간 : 2022.11 ~ 2022.12 \n인원 : 1명 \n역할 : 안드로이드 애플리케이션 개발 "
+                android:textSize="15dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:text="안드로이드 스튜디오를 사용해 개발한 스마트 포트폴리오 애플리케이션입니다.
+        \n\n코틀린을 사용해 전체적으로 애플리케이션을 개발하였습니다."
+                android:textSize="18dp"
+                android:textColor="@color/black"/>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="30dp"
+                android:layout_gravity="center">
+                <ImageView
+                    android:layout_width="130dp"
+                    android:layout_height="200dp"
+                    android:src="@drawable/project1_main"/>
+                <ImageView
+                    android:layout_width="130dp"
+                    android:layout_height="200dp"
+                    android:src="@drawable/project1_main"/>
+                <ImageView
+                    android:layout_width="130dp"
+                    android:layout_height="200dp"
+                    android:src="@drawable/project1_main"/>
+            </LinearLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:text="\n✔메인화면\n
+\t- 왼쪽에 네비게이션뷰를 이용해 다른 페이지로 이동 가능\n\n
+✔네비게이션\n
+\t- home, project, lyuhyewon 으로 화면 이동 \n
+\t- logout버튼을 누르면 Intro화면으로 이동\n\t\t(전 데이터는 다 삭제)\n\n
+✔lyuhyewon화면\n
+\t- 소개, 학교성적, 학교생활 을 fragment로 연결\n
+\t- viewpager2를 이용해 화면을 좌우로 넘길 수 있게 설정\n\n
+✔project화면\n
+\t- cardview를 이용해 프로젝트를 리스트 형식으로 볼 수 있음\n
+\t- '프로젝트 보러가기' 텍스트 클릭 시 자세한 프로젝트 내용 확인 가능"
+                android:textSize="15dp"
+                android:textColor="@color/black"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="GitHub 보러가기"
+                android:id="@+id/GitHub1"/>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+
+</LinearLayout>

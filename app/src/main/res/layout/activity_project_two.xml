@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProjectTwo"
+    android:orientation="vertical">
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:id="@+id/toolbar"
+        app:title="자리있나요?"
+        app:titleTextColor="@color/white"/>
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="자리있나요?"
+                android:textSize="30dp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:layout_margin="20dp" />
+            <ImageView
+                android:layout_width="300dp"
+                android:layout_height="200dp"
+                android:src="@drawable/project2"
+                android:layout_margin="20dp"
+                android:layout_gravity="center"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:text="개발 기간 : 2021.9 ~ 2022.2 \n인원 : 5명 \n역할 : 웹사이트 Front-End "
+                android:textSize="15dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:text="”자리있나요?” 는 한림대학교 공학관 북카페의 좌석을 실시간으로 조회할 수 있는 시스템입니다. \n\n저는 이 프로젝트에서 웹 사이트의 Front-End를 맡아 개발하였습니다."
+                android:textSize="18dp"
+                android:textColor="@color/black"/>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="30dp"
+                android:layout_gravity="center">
+                <ImageView
+                    android:layout_width="130dp"
+                    android:layout_height="200dp"
+                    android:src="@drawable/project1_main"/>
+                <ImageView
+                    android:layout_width="130dp"
+                    android:layout_height="200dp"
+                    android:src="@drawable/project1_main"/>
+                <ImageView
+                    android:layout_width="130dp"
+                    android:layout_height="200dp"
+                    android:src="@drawable/project1_main"/>
+            </LinearLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:text="\n✔메인화면\n
+\t- 공학관 북카페를 포함해 한림대학교 모든 건물들의 실시간 좌석을 볼 수 있도록 탭 구성\n\t\t(현재는 공학관 페이지만 구성)\n\n
+✔상세화면\n
+\t- 공학관 총 2개의 북카페와 소프트웨어빌리지의 배치도를 쉽게 알아볼 수 있음 \n
+\t- 360도 뷰를 통해 실제 좌석이 어떻게 생겼는지 확인할 수 있음\n\n
+✔센서\n
+\t- 무게 인식 센서를 아크릴 판과 방석에 부착해 물체를 인식했을 경우 해당 좌석의 색 변경\n
+\t- 책상과 의자 모두 인식됐을 경우 자리가 있다고 판단\n\n"
+                android:textSize="15dp"
+                android:textColor="@color/black"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="GitHub 보러가기"
+                android:id="@+id/GitHub2"/>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+
+</LinearLayout>
