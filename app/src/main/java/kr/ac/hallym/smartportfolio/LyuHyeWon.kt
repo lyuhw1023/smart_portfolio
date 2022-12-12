@@ -19,6 +19,7 @@ import kr.ac.hallym.smartportfolio.databinding.ActivityLyuhyewonBinding
 
 class LyuHyeWon : AppCompatActivity() {
     lateinit var toggle: ActionBarDrawerToggle
+    lateinit var binding: ActivityLyuhyewonBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         //setContentView(R.layout.activity_lyuHyeWon)
@@ -37,7 +38,6 @@ class LyuHyeWon : AppCompatActivity() {
         val viewPager = binding.viewpager
         val tabTitleArray = arrayOf(
             "소개",
-            "학교성적",
             "학교활동"
         )
 
@@ -47,6 +47,8 @@ class LyuHyeWon : AppCompatActivity() {
         TabLayoutMediator(tabLayout, viewPager) { tab, position ->
             tab.text = tabTitleArray[position]
         }.attach()
+
+        
 
     }
 
@@ -74,7 +76,7 @@ class LyuHyeWon : AppCompatActivity() {
 class MyFragmentPagerAdapter(activity: FragmentActivity): FragmentStateAdapter(activity) {
     val fragments: List<Fragment>
     init {
-        fragments = listOf(IntroFragment(), ScoreFragment(), SchoolFragment())
+        fragments = listOf(IntroFragment(), ActiveFragment())
     }
 
     override fun getItemCount(): Int = fragments.size
