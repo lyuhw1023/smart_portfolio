@@ -63,12 +63,17 @@ class MainActivity : AppCompatActivity(), OnNavigationItemSelectedListener {
 
             }
             R.id.navi_project-> {
-                val intent = Intent(this,ProjectMain::class.java)
+                val intent = Intent(this,ProjectTest::class.java)
                 startActivity(intent)
 
             }
             R.id.navi_lyuHyeWon-> {
                 val intent = Intent(this,LyuHyeWon::class.java)
+                startActivity(intent)
+
+            }
+            R.id.navi_class-> {
+                val intent = Intent(this,Class::class.java)
                 startActivity(intent)
 
             }
