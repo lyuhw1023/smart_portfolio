@@ -26,6 +26,10 @@
                     android:icon="@drawable/user"
                     android:title="LyuHyeWon"
                     android:id="@+id/navi_lyuHyeWon"/>
+                <item
+                    android:icon="@drawable/classbook"
+                    android:title="Class"
+                    android:id="@+id/navi_class"/>
             </group>
         </menu>
     </item>
