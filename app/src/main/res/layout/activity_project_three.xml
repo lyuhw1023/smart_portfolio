@@ -40,8 +40,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_margin="20dp"
-                android:text="개발 기간 : 2021.5 ~ 2021.6 \n인원 : 1명 \n역할 : 웹사이트 Front-End "
-                android:textSize="15dp"/>
+                android:text="✅개발 기간 : 2021.5 ~ 2021.6 \n✅인원 : 1명 \n✅역할 : 웹사이트 Front-End "
+                android:textSize="17dp"/>
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -52,21 +52,21 @@
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal"
+                android:orientation="vertical"
                 android:layout_marginTop="30dp"
                 android:layout_gravity="center">
                 <ImageView
-                    android:layout_width="130dp"
+                    android:layout_width="300dp"
                     android:layout_height="200dp"
-                    android:src="@drawable/project1_main"/>
+                    android:src="@drawable/project3"/>
                 <ImageView
-                    android:layout_width="130dp"
+                    android:layout_width="300dp"
                     android:layout_height="200dp"
-                    android:src="@drawable/project1_main"/>
+                    android:src="@drawable/project3_2"/>
                 <ImageView
-                    android:layout_width="130dp"
+                    android:layout_width="300dp"
                     android:layout_height="200dp"
-                    android:src="@drawable/project1_main"/>
+                    android:src="@drawable/project3_3"/>
             </LinearLayout>
             <TextView
                 android:layout_width="wrap_content"
@@ -80,7 +80,7 @@
 \t- 글 제목 클릭 시 해당 글 내용 확인 가능\n\n
 ✔캘린더 화면\n
 \t- 달력을 통해 매달 이야기 확인 가능\n"
-                android:textSize="15dp"
+                android:textSize="18dp"
                 android:textColor="@color/black"/>
             <Button
                 android:layout_width="wrap_content"

@@ -40,8 +40,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_margin="20dp"
-                android:text="개발 기간 : 2022.11 ~ 2022.12 \n인원 : 1명 \n역할 : 안드로이드 애플리케이션 개발 "
-                android:textSize="15dp"/>
+                android:text="✅개발 기간 : 2022.11 ~ 2022.12 \n✅인원 : 1명 \n✅역할 : 안드로이드 애플리케이션 개발 "
+                android:textSize="17dp"/>
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -57,34 +57,39 @@
                 android:layout_marginTop="30dp"
                 android:layout_gravity="center">
                 <ImageView
-                    android:layout_width="130dp"
-                    android:layout_height="200dp"
-                    android:src="@drawable/project1_main"/>
+                    android:layout_width="180dp"
+                    android:layout_height="300dp"
+                    android:src="@drawable/project1_1"/>
                 <ImageView
-                    android:layout_width="130dp"
-                    android:layout_height="200dp"
-                    android:src="@drawable/project1_main"/>
-                <ImageView
-                    android:layout_width="130dp"
-                    android:layout_height="200dp"
-                    android:src="@drawable/project1_main"/>
+                    android:layout_width="180dp"
+                    android:layout_height="300dp"
+                    android:src="@drawable/project1_2"/>
             </LinearLayout>
+            <ImageView
+                android:layout_width="180dp"
+                android:layout_height="300dp"
+                android:src="@drawable/project1_3"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"/>
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_margin="20dp"
-                android:text="\n✔메인화면\n
+                android:text="\n✔ 메인화면\n
 \t- 왼쪽에 네비게이션뷰를 이용해 다른 페이지로 이동 가능\n\n
-✔네비게이션\n
-\t- home, project, lyuhyewon 으로 화면 이동 \n
+✔ 네비게이션\n
+\t- home, project, lyuHyeWon, class, WithMe로 화면 이동 \n
 \t- logout버튼을 누르면 Intro화면으로 이동\n\t\t(전 데이터는 다 삭제)\n\n
-✔lyuhyewon화면\n
-\t- 소개, 학교성적, 학교생활 을 fragment로 연결\n
-\t- viewpager2를 이용해 화면을 좌우로 넘길 수 있게 설정\n\n
-✔project화면\n
+✔ Project화면\n
 \t- cardview를 이용해 프로젝트를 리스트 형식으로 볼 수 있음\n
-\t- '프로젝트 보러가기' 텍스트 클릭 시 자세한 프로젝트 내용 확인 가능"
-                android:textSize="15dp"
+\t- '프로젝트 보러가기' 텍스트 클릭 시 자세한 프로젝트 내용 확인 가능\n\n
+✔ LyuHyeWon화면\n
+\t- 소개, 학교생활을 fragment로 연결\n
+\t- viewpager2를 이용해 화면을 좌우로 넘길 수 있게 설정\n\n
+✔ Class화면\n
+\t- 수업, 성적을 fragment로 연결\n
+\t- 수업의 경우 카드뷰를 이용해 어떤 수업을 들었는지 확인 가능\n"
+                android:textSize="18dp"
                 android:textColor="@color/black"/>
             <Button
                 android:layout_width="wrap_content"

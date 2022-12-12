@@ -40,8 +40,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_margin="20dp"
-                android:text="개발 기간 : 2021.10 ~ 2021.12 \n인원 : 1명 \n역할 : 아두이노 제작 "
-                android:textSize="15dp"/>
+                android:text="✅개발 기간 : 2021.10 ~ 2021.12 \n✅인원 : 1명 \n✅역할 : 아두이노 제작 "
+                android:textSize="17dp"/>
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -56,17 +56,14 @@
                 android:layout_marginTop="30dp"
                 android:layout_gravity="center">
                 <ImageView
-                    android:layout_width="130dp"
+                    android:layout_width="180dp"
                     android:layout_height="200dp"
-                    android:src="@drawable/project1_main"/>
+                    android:src="@drawable/project5"
+                    android:layout_marginRight="20dp"/>
                 <ImageView
-                    android:layout_width="130dp"
+                    android:layout_width="180dp"
                     android:layout_height="200dp"
-                    android:src="@drawable/project1_main"/>
-                <ImageView
-                    android:layout_width="130dp"
-                    android:layout_height="200dp"
-                    android:src="@drawable/project1_main"/>
+                    android:src="@drawable/project5_2"/>
             </LinearLayout>
             <TextView
                 android:layout_width="wrap_content"
@@ -75,8 +72,8 @@
                 android:text="\n✔작동\n
 \t- 일정 거리 이상 물체가 인식되면 자동으로 뷔페의 용기가 열림\n\n
 ✔제작 과정\n
-\t- 손에 접시를 들고있어서 뷔페 용기의 뚜껑을 열기 힘들 경우를 위해 자동으로 열리는 제품을 생각해보았음"
-                android:textSize="15dp"
+\t- 손에 접시를 들고있어서 뷔페 용기의 뚜껑을 열기 힘들 경우를 위해 자동으로 열리는 제품을 생각해보았음\n"
+                android:textSize="18dp"
                 android:textColor="@color/black"/>
             <Button
                 android:layout_width="wrap_content"

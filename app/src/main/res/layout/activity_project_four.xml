@@ -40,8 +40,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_margin="20dp"
-                android:text="개발 기간 : 2022.11 ~ 2022.12 \n인원 : 4명 \n역할 : 심리검사, 마켓페이지 개발 "
-                android:textSize="15dp"/>
+                android:text="✅개발 기간 : 2022.11 ~ 2022.12 \n✅인원 : 4명 \n✅역할 : 심리검사, 마켓페이지 개발 "
+                android:textSize="17dp"/>
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -52,21 +52,22 @@
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal"
+                android:orientation="vertical"
                 android:layout_marginTop="30dp"
                 android:layout_gravity="center">
                 <ImageView
-                    android:layout_width="130dp"
-                    android:layout_height="200dp"
-                    android:src="@drawable/project1_main"/>
+                    android:layout_width="400dp"
+                    android:layout_height="300dp"
+                    android:src="@drawable/project4"/>
                 <ImageView
-                    android:layout_width="130dp"
-                    android:layout_height="200dp"
-                    android:src="@drawable/project1_main"/>
+                    android:layout_width="400dp"
+                    android:layout_height="300dp"
+                    android:src="@drawable/project4_2"/>
                 <ImageView
-                    android:layout_width="130dp"
-                    android:layout_height="200dp"
-                    android:src="@drawable/project1_main"/>
+                    android:layout_width="300dp"
+                    android:layout_height="300dp"
+                    android:src="@drawable/project4_3"
+                    android:layout_gravity="center"/>
             </LinearLayout>
             <TextView
                 android:layout_width="wrap_content"
@@ -86,8 +87,8 @@
 \t- 도서 및 상담 관련 제품을 구매할 수 있도록 설정\n
 \t- 원하는 제품을 장바구니에 담고 결제할 수 있음\n\n
 ✔위로의 장 화면\n
-\t- 고민거리를 서로 이야기하며 서로가 서로에게 위로가 될 수 있는 장 마련\n\n"
-                android:textSize="15dp"
+\t- 고민거리를 서로 이야기하며 서로가 서로에게 위로가 될 수 있는 장 마련\n"
+                android:textSize="18dp"
                 android:textColor="@color/black"/>
             <Button
                 android:layout_width="wrap_content"
