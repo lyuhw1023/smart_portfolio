@@ -18,12 +18,13 @@ class ContactMe : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        //setContentView(R.layout.activity_contact_me)
         binding = ActivityContactMeBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+        //Toolbar 설정
         setSupportActionBar(binding.toolbar)
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
+
 
         val requestLauncher: ActivityResultLauncher<Intent> = registerForActivityResult(
             ActivityResultContracts.StartActivityForResult()){
@@ -33,6 +34,7 @@ class ContactMe : AppCompatActivity() {
             }
         }
 
+        //mainFeb 버튼 클릭 시 AddActivity화면으로 이동
         binding.mainFeb.setOnClickListener{
             val intent = Intent(this, AddActivity::class.java)
             requestLauncher.launch(intent)
@@ -40,6 +42,7 @@ class ContactMe : AppCompatActivity() {
 
         contents = mutableListOf<String>()
 
+        //SQLite를 이용해 db 저장
         val db = DBHelper(this).readableDatabase
         val cursor = db.rawQuery("select * from CONTACT_TB", null)
         cursor.run {
@@ -57,17 +60,22 @@ class ContactMe : AppCompatActivity() {
             DividerItemDecoration(this, LinearLayoutManager.VERTICAL)
         )
     }
+
+    //메뉴 설정
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {
         menuInflater.inflate(R.menu.menu_main, menu)
         return super.onCreateOptionsMenu(menu)
     }
 
+    //Toolbar 이벤트 설정
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         when(item.itemId) {
+            //뒤로가기 버튼 클릭 시 home화면으로 이동
             android.R.id.home -> {
                 finish()
                 return true
             }
+            //logout 버튼 클릭 시 Login화면으로 이동
             R.id.menu_logout -> {
                 val intent = Intent(this, login::class.java)
                 startActivity(intent)

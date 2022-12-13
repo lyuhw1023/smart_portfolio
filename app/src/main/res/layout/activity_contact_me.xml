@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".ContactMe">
+    <!--Toolbar 설정-->
     <androidx.appcompat.widget.Toolbar
         android:layout_width="match_parent"
         android:layout_height="?attr/actionBarSize"
@@ -12,11 +13,13 @@
         android:id="@+id/toolbar"
         app:title="ContactMe"
         app:titleTextColor="@color/white"/>
+    <!--리스트로 보일 수 있도록 recyclerview 설정-->
     <androidx.recyclerview.widget.RecyclerView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:id="@+id/contactMe_recyclerView"
         android:layout_marginTop="70dp"/>
+    <!--메시지 추가하기 버튼-->
     <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

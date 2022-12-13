@@ -10,7 +10,7 @@
         android:layout_width="40dp"
         android:layout_height="40dp"
         android:src="@drawable/contact_me" />
-
+    <!--저장된 메시지 출력되는 textview-->
     <TextView
         android:layout_width="0dp"
         android:layout_height="wrap_content"
