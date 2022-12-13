@@ -28,19 +28,25 @@ class AddActivity : AppCompatActivity() {
         return super.onCreateOptionsMenu(menu)
     }
 
-    override fun onOptionsItemSelected(item: MenuItem): Boolean = when(item.itemId) {
-        R.id.menu_add_save -> {
-            val inputData = binding.addEditMessage.text.toString()
-            val db = DBHelper(this).writableDatabase
-            db.execSQL("insert into CONTACT_TB (contact) values (?)",
-                arrayOf<String>(inputData))
-            db.close()
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        when(item.itemId) {
+            android.R.id.home -> {
+                finish()
+                return true
+            }
+            R.id.menu_add_save -> {
+                val inputData = binding.addEditMessage.text.toString()
+                val db = DBHelper(this).writableDatabase
+                db.execSQL("insert into CONTACT_TB (contact) values (?)",
+                    arrayOf<String>(inputData))
+                db.close()
 
-            val intent = intent.putExtra("result", binding.addEditMessage.text.toString())
-            setResult(Activity.RESULT_OK, intent)
-            finish()
-            true
+                val intent = intent.putExtra("result", binding.addEditMessage.text.toString())
+                setResult(Activity.RESULT_OK, intent)
+                finish()
+                return true
+            }
         }
-        else -> true
+        return super.onOptionsItemSelected(item)
     }
 }
