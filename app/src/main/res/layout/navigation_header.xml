@@ -9,10 +9,10 @@
         android:layout_height="wrap_content"
         android:text="SmartPortfolio"
         android:textColor="@color/white"
-        android:textSize="20dp"
+        android:textSize="30dp"
         android:layout_alignParentBottom="true"
         android:layout_alignParentLeft="true"
-        android:layout_marginBottom="30dp"
-        android:layout_marginLeft="30dp"/>
+        android:layout_marginBottom="15dp"
+        android:layout_marginLeft="15dp"/>
 
 </RelativeLayout>
