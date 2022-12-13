@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     package="kr.ac.hallym.smartportfolio">
 
-    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:allowBackup="true"
@@ -14,7 +14,53 @@
         android:roundIcon="@drawable/app_img"
         android:supportsRtl="true"
         android:theme="@style/Theme.SmartPortfolio"
+        android:usesCleartextTraffic="true"
         tools:targetApi="31">
+        <activity
+            android:name=".ProjectWebView5"
+            android:exported="false" />
+        <activity
+            android:name=".ProjectWebView4"
+            android:exported="false" />
+        <activity
+            android:name=".ProjectWebView3"
+            android:exported="false" />
+        <activity
+            android:name=".ProjectWebView2"
+            android:exported="false" />
+        <activity
+            android:name=".ProjectWebView"
+            android:exported="false" />
+        <activity
+            android:name=".ContactMe"
+            android:exported="false" />
+        <activity
+            android:name=".AddActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Class"
+            android:exported="false" />
+        <activity
+            android:name=".ProjectWeb"
+            android:exported="false" />
+        <activity
+            android:name=".ProjectFive"
+            android:exported="false" />
+        <activity
+            android:name=".ProjectFour"
+            android:exported="false" />
+        <activity
+            android:name=".ProjectThree"
+            android:exported="false" />
+        <activity
+            android:name=".ProjectTwo"
+            android:exported="false" />
+        <activity
+            android:name=".ProjectOne"
+            android:exported="false" />
+        <activity
+            android:name=".ProjectTest"
+            android:exported="false" />
         <activity
             android:name=".ProjectMain"
             android:exported="false" />

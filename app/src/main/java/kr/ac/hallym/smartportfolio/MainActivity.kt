@@ -21,33 +21,18 @@ class MainActivity : AppCompatActivity(), OnNavigationItemSelectedListener {
     var initTime= 0L
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        //setContentView(R.layout.activity_main)
         binding = ActivityMainBinding.inflate(layoutInflater)
         //네비게이션 뷰 객체 설정
         binding.mainDrawerView.setNavigationItemSelectedListener(this)
         setContentView(binding.root)
+        //Toolbar 설정
         setSupportActionBar(binding.toolbar)
+        //Toolbar 좌측 상단에 있는 toggle(햄버거 버튼)
         toggle = ActionBarDrawerToggle(this, binding.drawer, R.string.drawer_opened, R.string.drawer_closed)
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
         toggle.syncState()
-        /*binding.mainDrawerView.setNavigationItemSelectedListener {
-            Log.d("lyu", "navigation item is clicked: ${it.title}")
-            true
-        }*/
-        binding.lyu.setOnClickListener{
-            val intent: Intent = Intent(this, LyuHyeWon::class.java)
-            startActivity(intent)
-        }
-        binding.project.setOnClickListener{
-            val intent: Intent = Intent(this, ProjectMain::class.java)
-            startActivity(intent)
-        }
-        binding.projectTest.setOnClickListener{
-            val intent: Intent = Intent(this, ProjectTest::class.java)
-            startActivity(intent)
-        }
     }
-
+    //toggle 클릭
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         if(toggle.onOptionsItemSelected(item)){
             return true
@@ -55,6 +40,7 @@ class MainActivity : AppCompatActivity(), OnNavigationItemSelectedListener {
         return super.onOptionsItemSelected(item)
     }
 
+    //네비게이션메뉴 선택 시 이벤트
     override fun onNavigationItemSelected(item: MenuItem): Boolean {
         when(item.itemId){
             R.id.navi_home-> {
@@ -94,12 +80,13 @@ class MainActivity : AppCompatActivity(), OnNavigationItemSelectedListener {
     }
     //뒤로가기 버튼 이벤트 핸들러
     override fun onBackPressed() {
-        //뒤로가기 버튼을 처음 눌렀거나 누른지 3초가 지났을 때
+        //뒤로가기 버튼을 처음 눌렀거나 누른지 3초가 지났을 때 Toast 문구 설정
         if(System.currentTimeMillis() - initTime > 3000){
             Toast.makeText(this, "\t\t정말 종료하시겠습니까? \n종료하려면 한 번 더 누르세요!", Toast.LENGTH_SHORT).show()
             initTime = System.currentTimeMillis()
             return
         }
+        //뒤로가기 버튼을 3초 이내로 눌렀을 때 애플맄이션 종료
         if(System.currentTimeMillis() <= initTime + 3000){
             finishAffinity()
         }
