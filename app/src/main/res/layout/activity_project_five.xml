@@ -31,7 +31,16 @@
                 android:textSize="30dp"
                 android:textColor="@color/black"
                 android:textStyle="bold"
-                android:layout_margin="20dp" />
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="13dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="#Arduino  #Sensor  #자동"
+                android:layout_marginLeft="20dp"
+                android:textSize="18dp"
+                android:textColor="	#191970"/>
             <ImageView
                 android:layout_width="300dp"
                 android:layout_height="200dp"
