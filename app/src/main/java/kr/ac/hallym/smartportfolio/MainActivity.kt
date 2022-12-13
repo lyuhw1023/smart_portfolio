@@ -77,7 +77,11 @@ class MainActivity : AppCompatActivity(), OnNavigationItemSelectedListener {
                 startActivity(intent)
 
             }
-            R.id.navi_setting-> Toast.makeText(this,"setting clicked",Toast.LENGTH_SHORT).show()
+            R.id.navi_contact-> {
+                val intent = Intent(this,ContactMe::class.java)
+                startActivity(intent)
+
+            }
             R.id.navi_logout-> {
                 val intent = Intent(this,login::class.java)
                 startActivity(intent)
