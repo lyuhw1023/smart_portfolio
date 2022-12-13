@@ -30,6 +30,10 @@
                     android:icon="@drawable/classbook"
                     android:title="Class"
                     android:id="@+id/navi_class"/>
+                <item
+                    android:icon="@drawable/github"
+                    android:title="GitHub"
+                    android:id="@+id/navi_github"/>
             </group>
         </menu>
     </item>
