@@ -29,7 +29,6 @@
 <img src="https://user-images.githubusercontent.com/52669844/207296524-7909375f-9a90-4082-aecb-5a20212d659d.jpg" width="200px"/>
 <img src="https://user-images.githubusercontent.com/52669844/207296274-2ea18a7c-2a96-43fe-bdae-30104b96c8a1.jpg" width="200px"/>
 </div>
- -
 ## LyuHyeWon
 
 ## Class
