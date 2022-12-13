@@ -43,31 +43,37 @@ class MainActivity : AppCompatActivity(), OnNavigationItemSelectedListener {
     //네비게이션메뉴 선택 시 이벤트
     override fun onNavigationItemSelected(item: MenuItem): Boolean {
         when(item.itemId){
+            //id가 navi_home 버튼 클릭 시 MainActivity화면으로 이동
             R.id.navi_home-> {
                 val intent = Intent(this,MainActivity::class.java)
                 startActivity(intent)
 
             }
+            //id가 navi_project 버튼 클릭 시 ProjectTest화면으로 이동
             R.id.navi_project-> {
                 val intent = Intent(this,ProjectTest::class.java)
                 startActivity(intent)
 
             }
+            //id가 navi_lyuHyeWon 버튼 클릭 시 LyuHyeWon화면으로 이동
             R.id.navi_lyuHyeWon-> {
                 val intent = Intent(this,LyuHyeWon::class.java)
                 startActivity(intent)
 
             }
+            //id가 navi_class 버튼 클릭 시 Class화면으로 이동
             R.id.navi_class-> {
                 val intent = Intent(this,Class::class.java)
                 startActivity(intent)
 
             }
+            //id가 navi_contact 버튼 클릭 시 ContactMe화면으로 이동
             R.id.navi_contact-> {
                 val intent = Intent(this,ContactMe::class.java)
                 startActivity(intent)
 
             }
+            //id가 navi_logout 버튼 클릭 시 login화면으로 이동
             R.id.navi_logout-> {
                 val intent = Intent(this,login::class.java)
                 startActivity(intent)
