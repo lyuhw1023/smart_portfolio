@@ -34,15 +34,15 @@
         </menu>
     </item>
 
-    <item android:title="settings">
+    <item android:title="Others">
         <menu>
             <group
                 android:id="@+id/menu_settings"
                 android:checkableBehavior="single">
                 <item
-                    android:icon="@drawable/setting"
-                    android:title="Setting"
-                    android:id="@+id/navi_setting"/>
+                    android:icon="@drawable/contact_me"
+                    android:title="ContactMe"
+                    android:id="@+id/navi_contact"/>
                 <item
                     android:icon="@drawable/logout"
                     android:title="Logout"
