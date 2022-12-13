@@ -6,6 +6,7 @@
     android:layout_height="match_parent"
     tools:context=".ProjectFour"
     android:orientation="vertical">
+    <!--Toolbar 설정-->
     <androidx.appcompat.widget.Toolbar
         android:layout_width="match_parent"
         android:layout_height="?attr/actionBarSize"
@@ -13,6 +14,7 @@
         android:id="@+id/toolbar"
         app:title="위로"
         app:titleTextColor="@color/white"/>
+    <!--화면 스크롤할 수 있도록 NestedScrollView 설정-->
     <androidx.core.widget.NestedScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -41,14 +43,17 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="20dp"
                 android:text="✅개발 기간 : 2022.11 ~ 2022.12 \n✅인원 : 4명 \n✅역할 : 심리검사, 마켓페이지 개발 "
-                android:textSize="17dp"/>
+                android:textSize="17dp"
+                android:textColor="#696969"
+                android:lineSpacingExtra="7dp"/>
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_margin="20dp"
                 android:text="”위로”는 정신 건강 관리 웹 서비스 입니다. 워드프레스를 통해 웹사이트를 개발하였습니다.\n\n저는 이 프로젝트에서 심리검사와 마켓페이지를 맡아 개발하였습니다."
                 android:textSize="18dp"
-                android:textColor="@color/black"/>
+                android:textColor="@color/black"
+                android:lineSpacingExtra="2dp"/>
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -89,7 +94,8 @@
 ✔위로의 장 화면\n
 \t- 고민거리를 서로 이야기하며 서로가 서로에게 위로가 될 수 있는 장 마련\n"
                 android:textSize="18dp"
-                android:textColor="@color/black"/>
+                android:textColor="@color/black"
+                android:lineSpacingExtra="4dp"/>
             <Button
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"

@@ -15,13 +15,13 @@ class ProjectFour : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        //setContentView(R.layout.activity_project_one)
         binding = ActivityProjectFourBinding.inflate(layoutInflater)
         setContentView(binding.root)
-
+        //Toolbar 설정
         setSupportActionBar(binding.toolbar)
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
 
+        //버튼 눌렀을 때 발생하는 이벤트 핸들러 설정
         val eventHandler = object: DialogInterface.OnClickListener{
             override fun onClick(p0: DialogInterface?, p1: Int) {
                 if(p1 == DialogInterface.BUTTON_POSITIVE){
@@ -34,6 +34,7 @@ class ProjectFour : AppCompatActivity() {
             }
         }
 
+        //GitHub버튼 눌렀을 때 발생하는 이벤트
         binding.GitHub4.setOnClickListener{
             AlertDialog.Builder(this).run {
                 setTitle("GITHUB 보러가기")
@@ -45,17 +46,22 @@ class ProjectFour : AppCompatActivity() {
             }
         }
     }
+
+    //메뉴 설정
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {
         menuInflater.inflate(R.menu.menu_main, menu)
         return super.onCreateOptionsMenu(menu)
     }
 
+    //Toolbar 이벤트 설정
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         when(item.itemId) {
+            //뒤로가기 버튼 클릭 시 home화면으로 이동
             android.R.id.home -> {
                 finish()
                 return true
             }
+            //logout 버튼 클릭 시 Login화면으로 이동
             R.id.menu_logout -> {
                 val intent = Intent(this, login::class.java)
                 startActivity(intent)

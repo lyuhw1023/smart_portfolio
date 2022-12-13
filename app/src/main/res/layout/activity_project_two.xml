@@ -6,6 +6,7 @@
     android:layout_height="match_parent"
     tools:context=".ProjectTwo"
     android:orientation="vertical">
+    <!--Toolbar 설정-->
     <androidx.appcompat.widget.Toolbar
         android:layout_width="match_parent"
         android:layout_height="?attr/actionBarSize"
@@ -13,6 +14,7 @@
         android:id="@+id/toolbar"
         app:title="자리있나요?"
         app:titleTextColor="@color/white"/>
+    <!--화면 스크롤할 수 있도록 NestedScrollView 설정-->
     <androidx.core.widget.NestedScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -41,14 +43,17 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="20dp"
                 android:text="✅개발 기간 : 2021.9 ~ 2022.2 \n✅인원 : 5명 \n✅역할 : 웹사이트 Front-End "
-                android:textSize="17dp"/>
+                android:textSize="17dp"
+                android:textColor="#696969"
+                android:lineSpacingExtra="7dp"/>
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_margin="20dp"
                 android:text="”자리있나요?” 는 한림대학교 공학관 북카페의 좌석을 실시간으로 조회할 수 있는 시스템입니다. \n\n저는 이 프로젝트에서 웹 사이트의 Front-End를 맡아 개발하였습니다."
                 android:textSize="18dp"
-                android:textColor="@color/black"/>
+                android:textColor="@color/black"
+                android:lineSpacingExtra="2dp"/>
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -81,7 +86,8 @@
 \t- 무게 인식 센서를 아크릴 판과 방석에 부착해 물체를 인식했을 경우 해당 좌석의 색 변경\n
 \t- 책상과 의자 모두 인식됐을 경우 자리가 있다고 판단\n"
                 android:textSize="18dp"
-                android:textColor="@color/black"/>
+                android:textColor="@color/black"
+                android:lineSpacingExtra="4dp"/>
             <Button
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"

@@ -10,6 +10,7 @@ class ProjectWebView5 : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_project_web_view5)
 
+        //id webview5를 통해 해당 링크가 뜨는 웹뷰 설정
         var myWebView: WebView = findViewById(R.id.webview5)
         myWebView.webViewClient = WebViewClient()
         myWebView.loadUrl("https://github.com/lyuhw1023/arduino_project")
