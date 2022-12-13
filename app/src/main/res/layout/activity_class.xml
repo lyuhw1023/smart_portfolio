@@ -6,36 +6,29 @@
     android:layout_height="match_parent"
     tools:context=".Class"
     android:id="@+id/drawer">
-
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
         android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+        <!--Toolbar 설정-->
         <androidx.appcompat.widget.Toolbar
             android:layout_width="match_parent"
             android:layout_height="?attr/actionBarSize"
             android:background="?attr/colorPrimary"
             android:id="@+id/toolbar"
             app:title="Class"/>
+        <!--탭 메뉴 설정-->
         <com.google.android.material.tabs.TabLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/tabs"/>
+        <!--좌우로 이동 가능하도록 뷰페이저 설정-->
         <androidx.viewpager2.widget.ViewPager2
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:id="@+id/viewpager"/>
 
     </LinearLayout>
-    <com.google.android.material.navigation.NavigationView
-        android:layout_width="wrap_content"
-        android:layout_height="match_parent"
-        android:layout_gravity="start"
-        android:fitsSystemWindows="true"
-        app:headerLayout="@layout/navigation_header"
-        app:menu="@menu/menu_navigation"
-        android:id="@+id/main_drawer_view"/>
-
 </androidx.drawerlayout.widget.DrawerLayout>
 
