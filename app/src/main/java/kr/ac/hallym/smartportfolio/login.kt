@@ -10,10 +10,10 @@ class login : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        //setContentView(R.layout.activity_login)
         binding =ActivityLoginBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+        //loginButton 클릭 시 SplashActivity로 이동
         binding.loginButton.setOnClickListener{
             val intent = Intent(this, SplashActivity::class.java)
             startActivity(intent)
