@@ -5,8 +5,10 @@
 
 
 ## 인트로화면 & Splash
+<div>
 <img src="https://user-images.githubusercontent.com/52669844/207294192-1e2ea1f7-cb9a-4129-8d23-b1a2c43e7542.jpg" width="200px"/>
-<img src="https://user-images.githubusercontent.com/52669844/207294259-e630e79a-1e53-4f13-bf06-d99b2bdbcb9d.mp4" width="200px"/>
+<img src="https://user-images.githubusercontent.com/52669844/207531375-d2449a6d-9242-41eb-9318-09f4805838e4.gif" width="200px"/>
+</div>
 
  -앱의 Intro화면에서 '보러가기'버튼을 누르면 다음 화면으로 넘어간다.  
  -다음 화면으로 넘어갈 때 splash를 통해 애니메이션을 보여준다.  
