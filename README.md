@@ -45,7 +45,7 @@
 <img src="https://user-images.githubusercontent.com/52669844/207296274-2ea18a7c-2a96-43fe-bdae-30104b96c8a1.jpg" width="200px"/>
 </div>
 
- - 카트뉴스를 통해 내용 확인 가능
+ - 카드뉴스를 통해 내용 확인 가능
  - '프로젝트 보러가기' 텍스트 클릭 시 상세 페이지 확인 가능
  <br/>
 
