@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item android:title="Index">
+        <menu>
+            <group
+                android:id="@+id/menu_index"
+                android:checkableBehavior="single">
+                <item
+                    android:icon="@drawable/home"
+                    android:title="Home"
+                    android:id="@+id/navi_home"/>
+            </group>
+        </menu>
+    </item>
+
+    <item android:title="Portfolio">
+        <menu>
+            <group>
+                <item
+                    android:icon="@drawable/folder"
+                    android:title="Project"
+                    android:id="@+id/navi_project"/>
+                <item
+                    android:icon="@drawable/user"
+                    android:title="LyuHyeWon"
+                    android:id="@+id/navi_lyuHyeWon"/>
+                <item
+                    android:icon="@drawable/classbook"
+                    android:title="Class"
+                    android:id="@+id/navi_class"/>
+                <item
+                    android:icon="@drawable/github"
+                    android:title="GitHub"
+                    android:id="@+id/navi_github"/>
+            </group>
+        </menu>
+    </item>
+
+    <item android:title="Others">
+        <menu>
+            <group
+                android:id="@+id/menu_settings"
+                android:checkableBehavior="single">
+                <item
+                    android:icon="@drawable/contact_me"
+                    android:title="ContactMe"
+                    android:id="@+id/navi_contact"/>
+                <item
+                    android:icon="@drawable/logout"
+                    android:title="Logout"
+                    android:id="@+id/navi_logout"/>
+            </group>
+        </menu>
+    </item>
+</menu>

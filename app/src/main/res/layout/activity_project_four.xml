@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProjectFour"
+    android:orientation="vertical">
+    <!--Toolbar 설정-->
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:id="@+id/toolbar"
+        app:title="위로"
+        app:titleTextColor="@color/white"/>
+    <!--화면 스크롤할 수 있도록 NestedScrollView 설정-->
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="위로"
+                android:textSize="30dp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="13dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="#정신건강관리서비스  #WEB  #워드프레스"
+                android:layout_marginLeft="20dp"
+                android:textSize="18dp"
+                android:textColor="	#191970"/>
+            <ImageView
+                android:layout_width="300dp"
+                android:layout_height="200dp"
+                android:src="@drawable/project4"
+                android:layout_margin="20dp"
+                android:layout_gravity="center"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:text="✅개발 기간 : 2022.11 ~ 2022.12 \n✅인원 : 4명 \n✅역할 : 심리검사, 마켓페이지 개발 "
+                android:textSize="17dp"
+                android:textColor="#696969"
+                android:lineSpacingExtra="7dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:text="”위로”는 정신 건강 관리 웹 서비스 입니다. 워드프레스를 통해 웹사이트를 개발하였습니다.\n\n저는 이 프로젝트에서 심리검사와 마켓페이지를 맡아 개발하였습니다."
+                android:textSize="18dp"
+                android:textColor="@color/black"
+                android:lineSpacingExtra="2dp"/>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="30dp"
+                android:layout_gravity="center">
+                <ImageView
+                    android:layout_width="400dp"
+                    android:layout_height="300dp"
+                    android:src="@drawable/project4"/>
+                <ImageView
+                    android:layout_width="400dp"
+                    android:layout_height="300dp"
+                    android:src="@drawable/project4_2"/>
+                <ImageView
+                    android:layout_width="300dp"
+                    android:layout_height="300dp"
+                    android:src="@drawable/project4_3"
+                    android:layout_gravity="center"/>
+            </LinearLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:text="\n✔메인화면\n
+\t- 상단에 네비게이션을 이용해 다른 페이지로 이동 가능\n
+\t- 주요 기능들을 한 눈에 알아보기 쉽도록 바로가기 메뉴 설정\n
+\t- AI챗봇을 통해 구르미와 소통 가능\n\n
+✔네비게이션\n
+\t- home, 상담사찾기, 심리검사, 마켓, 위로의 장 으로 화면 이동 \n\n
+✔상담사찾기 화면\n
+\t- 원하는 진료 목록에 해당하는 상담사를 선택 후 원하는 날짜에 예약할 수 있음\n\n
+✔심리검사 화면\n
+\t- 다양한 심리검사를 진행할 수 있도록 설정\n\n
+✔마켓 화면\n
+\t- 도서 및 상담 관련 제품을 구매할 수 있도록 설정\n
+\t- 원하는 제품을 장바구니에 담고 결제할 수 있음\n\n
+✔위로의 장 화면\n
+\t- 고민거리를 서로 이야기하며 서로가 서로에게 위로가 될 수 있는 장 마련\n"
+                android:textSize="18dp"
+                android:textColor="@color/black"
+                android:lineSpacingExtra="4dp"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="GitHub 보러가기"
+                android:id="@+id/GitHub4"/>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+
+</LinearLayout>

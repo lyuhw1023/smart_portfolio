@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProjectThree"
+    android:orientation="vertical">
+    <!--Toolbar 설정-->
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:id="@+id/toolbar"
+        app:title="Healing Blog"
+        app:titleTextColor="@color/white"/>
+    <!--화면 스크롤할 수 있도록 NestedScrollView 설정-->
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Healing Blog"
+                android:textSize="30dp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="13dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="#WebBlog  #WEB  #Healing"
+                android:layout_marginLeft="20dp"
+                android:textSize="18dp"
+                android:textColor="	#191970"/>
+            <ImageView
+                android:layout_width="300dp"
+                android:layout_height="200dp"
+                android:src="@drawable/project3"
+                android:layout_margin="20dp"
+                android:layout_gravity="center"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:text="✅개발 기간 : 2021.5 ~ 2021.6 \n✅인원 : 1명 \n✅역할 : 웹사이트 Front-End "
+                android:textSize="17dp"
+                android:textColor="#696969"
+                android:lineSpacingExtra="7dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:text="HTML, CSS, JavaScript를 이용해 개발한 웹 블로그입니다. \n\nHealingStory, CodingStory, Calendar 등을 포함해 저에게 힐링이 되는 모든것을 기록하였습니다."
+                android:textSize="18dp"
+                android:textColor="@color/black"
+                android:lineSpacingExtra="2dp"/>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="30dp"
+                android:layout_gravity="center">
+                <ImageView
+                    android:layout_width="300dp"
+                    android:layout_height="200dp"
+                    android:src="@drawable/project3"/>
+                <ImageView
+                    android:layout_width="300dp"
+                    android:layout_height="200dp"
+                    android:src="@drawable/project3_2"/>
+                <ImageView
+                    android:layout_width="300dp"
+                    android:layout_height="200dp"
+                    android:src="@drawable/project3_3"/>
+            </LinearLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:text="\n✔메인화면\n
+\t- 왼쪽에 네비게이션을 이용해 다른 페이지로 이동 가능\n\n
+✔네비게이션\n
+\t- home, 글보기, 코딩이야기, 캘린더, 방명록 으로 화면 이동 \n\n
+✔글보기, 코딩이야기 화면\n
+\t- 글 제목 클릭 시 해당 글 내용 확인 가능\n\n
+✔캘린더 화면\n
+\t- 달력을 통해 매달 이야기 확인 가능\n"
+                android:textSize="18dp"
+                android:textColor="@color/black"
+                android:lineSpacingExtra="4dp"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="GitHub 보러가기"
+                android:id="@+id/GitHub3"/>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+
+</LinearLayout>

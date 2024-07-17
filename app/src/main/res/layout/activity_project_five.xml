@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProjectFive"
+    android:orientation="vertical">
+    <!--Toolbar 설정-->
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:id="@+id/toolbar"
+        app:title="자동뷔페용기"
+        app:titleTextColor="@color/white"/>
+    <!--화면 스크롤할 수 있도록 NestedScrollView 설정-->
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="자동뷔페용기"
+                android:textSize="30dp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="13dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="#Arduino  #Sensor  #자동"
+                android:layout_marginLeft="20dp"
+                android:textSize="18dp"
+                android:textColor="	#191970"/>
+            <ImageView
+                android:layout_width="300dp"
+                android:layout_height="200dp"
+                android:src="@drawable/project5"
+                android:layout_margin="20dp"
+                android:layout_gravity="center"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:text="✅개발 기간 : 2021.10 ~ 2021.12 \n✅인원 : 1명 \n✅역할 : 아두이노 제작 "
+                android:textSize="17dp"
+                android:textColor="#696969"
+                android:lineSpacingExtra="7dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:text="아두이노를 활용해 제작한 자동 뷔페 용기입니다. \n\n 사용자가 일정 거리 이상 다가오게 되면 자동으로 뷔페의 용기가 열리도록 제작하였습니다."
+                android:textSize="18dp"
+                android:textColor="@color/black"
+                android:lineSpacingExtra="2dp"/>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="30dp"
+                android:layout_gravity="center">
+                <ImageView
+                    android:layout_width="180dp"
+                    android:layout_height="200dp"
+                    android:src="@drawable/project5"
+                    android:layout_marginRight="20dp"/>
+                <ImageView
+                    android:layout_width="180dp"
+                    android:layout_height="200dp"
+                    android:src="@drawable/project5_2"/>
+            </LinearLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:text="\n✔작동\n
+\t- 일정 거리 이상 물체가 인식되면 자동으로 뷔페의 용기가 열림\n\n
+✔제작 과정\n
+\t- 손에 접시를 들고있어서 뷔페 용기의 뚜껑을 열기 힘들 경우를 위해 자동으로 열리는 제품을 생각해보았음\n"
+                android:textSize="18dp"
+                android:textColor="@color/black"
+                android:lineSpacingExtra="4dp"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="GitHub 보러가기"
+                android:id="@+id/GitHub5"/>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+
+</LinearLayout>

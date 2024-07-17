@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">SmartPortfolio</string>
+    <string name="drawer_opened">Opened Drawer</string>
+    <string name="drawer_closed">Closed Drawer</string>
+    <string name="intro1">이름  :  유혜원\n학교  :  한림대학교\n소속  :  정보과학대학 \n\t\t\t\t\t주전공  :  빅데이터전공\n\t\t\t\t\t복수전공  :  스마트IoT전공\n
+                            생년월일  :  2000.10.23\n 전화번호  :  010-2786-0570\n</string>
+    <string name="intro2">깃허브  :  https://github.com/lyuhw1023</string>
+    <string name="intro3">소개  :  https://lyuhw1023.github.io</string>
+    <string name="intro4">이메일  :  lyuhw11023@gmail.com</string>
+    <string name="scoreName">과목명\n이산구조론\n자바프로그래밍1\n컴퓨팅사고와문제해결\n선형대수\n창의코딩웹\n자료구조\nC프로그래밍\n데이터사이언스기초\n데이터베이스기초\n
+                            알고리즘\n인공지능\n웹프로그래밍\n</string>
+    <string name="score">성적\nA+\nA0\nA+\nA+\nA+\nA0\nA0\nA+\nA+\nA+\nA0\nA+\n</string>
+    <string name="activity">2020년도 1학기 신입생 몰입형 SW코딩캠프\n2020년도 2학기 인공지능 교육 특강 수료\nCodeit 대학생 코딩 캠프 7기 수료 (2021.6.23~ 2021.7.23)\n2022년도 1학기 SW교과목 멘토링(컴퓨팅사고 AI기초) 멘토\n2022년도 1학기 디딤돌 멘토링 멘토\n2022년도 1학기 SW전공 멘토링(파이썬) 멘토\n2022년도 2학기 SW전공 멘토링(창의코딩웹) 멘토\n2022년도 정보과학대학 학술동아리 노네임 회장\n2022년도 정보과학대학 서공제 아이디어 부문 장려상\n</string>
+    <string name="career">2020년도 제 2대 소프트웨어융합대학 학생회 STEP 체육부원\n2020년도 교내 소프트웨어융합대학 학술동아리 노네임 활동\n2021년도 제 3대 소프트웨어융합대학 학생회 WUSM 체육부장\n2021년도 창업동아리 트라움 활동\n2022년도 제 4대 정보과학대학 학생회 A:BLE 기획국장\n2022년도 교내 정보과학대학 학술동아리 노네임 회장\n2022년 한림대학교 대동제 그,_림 축제준비위원회 밤부스팀 활동\n</string>
+
+
+    <string name="MainText">유혜원 | Android Developer</string>
+    <string name="isMainText">끝없이 인내하고 끝없이 노력하고 끝없이 겸손하자.  <b>안드로이드 개발자 유혜원</b>입니다.</string>
+
+
+    <string name="projectTitle1">SmartPortfolio</string>
+    <string name="projectTitle2">자리있나요?</string>
+    <string name="projectTitle3">Healing Blog</string>
+    <string name="projectTitle4">쓰담쓰담쓰담</string>
+    <string name="projectTitle5">자동뷔페용기</string>
+    <string name="projectDetail1">2022년도 2학기에 수강중인 모바일프로그래밍 수업에서 진행한 스마트 포트폴리오 애플리케이션입니다.</string>
+    <string name="projectDetail2">실시간 좌석 조회 시스템 “자리있나요?” 는 한림대학교 공학관 북카페의 좌석을 실시간으로 조회할 수 있는 시스템입니다.
+                                    공학관 왼쪽의 북카페, 소프트웨어빌리지, 오른쪽 북카페 총 3곳의 좌석 배치도와 360도 뷰를 통해 정확한 자리를 파악할 수 있도록 웹을 디자인하였습니다.
+                                    \n저는 이 프로젝트에서 웹 페이지의 Front-End를 맡아 개발하였습니다. </string>
+    <string name="projectDetail3">HTML, CSS, JavaScript를 이용해 개발한 웹 블로그입니다. HealingStory, CodingStory, Calendar 등을 포함해 저에게 힐링이 되는 모든것을 기록하였습니다.</string>
+    <string name="projectDetail4">2022년도 2학기에 수강중인 오픈소스sw개발도구활용 수업에서 진행한 정신 건강 관리 웹 서비스 입니다. 워드프레스를 통해 웹사이트를 개발하였습니다.
+                                    \n저는 이 프로젝트에서 심리검사와 판매페이지를 맡아 개발하였습니다.</string>
+    <string name="projectDetail5">아두이노를 활용한 자동 뷔페 용기입니다. 사용자가 일정 거리 이상 다가오게 되면 자동으로 뷔페의 용기가 열리도록 제작하였습니다.</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
