@@ -46,7 +46,8 @@
                     app:layout_constraintTop_toTopOf="parent"
                     app:layout_constraintLeft_toLeftOf="@id/timeline_line"
                     app:layout_constraintRight_toRightOf="@id/timeline_line"
-                    app:layout_constraintVertical_bias="0.015">
+                    app:layout_constraintVertical_bias="0.015"
+                    android:contentDescription="@null">
                 </ImageView>
                 <ImageView
                     android:layout_width="25dp"
@@ -56,7 +57,8 @@
                     app:layout_constraintTop_toTopOf="parent"
                     app:layout_constraintLeft_toLeftOf="@id/timeline_line"
                     app:layout_constraintRight_toRightOf="@id/timeline_line"
-                    app:layout_constraintVertical_bias="0.216">
+                    app:layout_constraintVertical_bias="0.216"
+                    android:contentDescription="@null">
                 </ImageView>
                 <ImageView
                     android:layout_width="25dp"
@@ -66,7 +68,8 @@
                     app:layout_constraintTop_toTopOf="parent"
                     app:layout_constraintLeft_toLeftOf="@id/timeline_line"
                     app:layout_constraintRight_toRightOf="@id/timeline_line"
-                    app:layout_constraintVertical_bias="0.418">
+                    app:layout_constraintVertical_bias="0.418"
+                    android:contentDescription="@null">
                 </ImageView>
                 <ImageView
                     android:layout_width="25dp"
@@ -76,7 +79,8 @@
                     app:layout_constraintTop_toTopOf="parent"
                     app:layout_constraintLeft_toLeftOf="@id/timeline_line"
                     app:layout_constraintRight_toRightOf="@id/timeline_line"
-                    app:layout_constraintVertical_bias="0.619">
+                    app:layout_constraintVertical_bias="0.619"
+                    android:contentDescription="@null">
                 </ImageView>
                 <ImageView
                     android:layout_width="25dp"
@@ -86,7 +90,8 @@
                     app:layout_constraintTop_toTopOf="parent"
                     app:layout_constraintLeft_toLeftOf="@id/timeline_line"
                     app:layout_constraintRight_toRightOf="@id/timeline_line"
-                    app:layout_constraintVertical_bias="0.819">
+                    app:layout_constraintVertical_bias="0.819"
+                    android:contentDescription="@null">
                 </ImageView>
             </androidx.constraintlayout.widget.ConstraintLayout>
             <LinearLayout
@@ -120,13 +125,15 @@
                             android:layout_height="200dp"
                             android:adjustViewBounds="true"
                             android:layout_gravity="center"
-                            android:src="@drawable/project1"/>
+                            android:src="@drawable/project1"
+                            android:contentDescription="@null"/>
                         <TextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:textSize="15dp"
+                            android:textSize="15sp"
                             android:layout_margin="10dp"
-                            android:text="안드로이드 스튜디오를 사용해 개발한 스마트 포트폴리오 애플리케이션입니다.\n코틀린을 사용해 전체적으로 애플리케이션을 개발하였습니다."/>
+                            android:text="안드로이드 스튜디오를 사용해 개발한 스마트 포트폴리오 애플리케이션입니다.\n코틀린을 사용해 전체적으로 애플리케이션을 개발하였습니다."
+                            android:contentDescription="@null"/>
                         <LinearLayout
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
@@ -135,18 +142,20 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:text="프로젝트 보러가기"
-                                android:textSize="15dp"
+                                android:textSize="15sp"
                                 android:textColor="#333333"
                                 android:layout_marginTop="8dp"
                                 android:layout_marginBottom="12dp"
                                 android:layout_marginLeft="12dp"
                                 android:layout_marginRight="5dp"
-                                android:id="@+id/goToUrl1"/>
+                                android:id="@+id/goToUrl1"
+                                android:contentDescription="프로젝트 보러가기 링크1"/>
                             <ImageView
                                 android:layout_width="13dp"
                                 android:layout_height="15dp"
                                 android:src="@drawable/next"
-                                android:layout_marginTop="11dp"/>
+                                android:layout_marginTop="11dp"
+                                android:contentDescription="@null"/>
                         </LinearLayout>
                     </LinearLayout>
 
@@ -177,7 +186,8 @@
                             android:layout_height="200dp"
                             android:adjustViewBounds="true"
                             android:layout_gravity="center"
-                            android:src="@drawable/project2"/>
+                            android:src="@drawable/project2"
+                            android:contentDescription="@null"/>
                         <TextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
@@ -203,7 +213,8 @@
                                 android:layout_width="13dp"
                                 android:layout_height="15dp"
                                 android:src="@drawable/next"
-                                android:layout_marginTop="11dp"/>
+                                android:layout_marginTop="11dp"
+                                android:contentDescription="@null"/>
                         </LinearLayout>
                     </LinearLayout>
 
@@ -234,7 +245,8 @@
                             android:layout_height="200dp"
                             android:adjustViewBounds="true"
                             android:layout_gravity="center"
-                            android:src="@drawable/project3"/>
+                            android:src="@drawable/project3"
+                            android:contentDescription="@null"/>
                         <TextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
@@ -260,7 +272,8 @@
                                 android:layout_width="13dp"
                                 android:layout_height="15dp"
                                 android:src="@drawable/next"
-                                android:layout_marginTop="11dp"/>
+                                android:layout_marginTop="11dp"
+                                android:contentDescription="@null"/>
                         </LinearLayout>
                     </LinearLayout>
 
@@ -291,7 +304,8 @@
                             android:layout_height="200dp"
                             android:adjustViewBounds="true"
                             android:layout_gravity="center"
-                            android:src="@drawable/project4"/>
+                            android:src="@drawable/project4"
+                            android:contentDescription="@null"/>
                         <TextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
@@ -317,7 +331,8 @@
                                 android:layout_width="13dp"
                                 android:layout_height="15dp"
                                 android:src="@drawable/next"
-                                android:layout_marginTop="11dp"/>
+                                android:layout_marginTop="11dp"
+                                android:contentDescription="@null"/>
                         </LinearLayout>
                     </LinearLayout>
 
@@ -349,7 +364,8 @@
                             android:layout_height="200dp"
                             android:adjustViewBounds="true"
                             android:layout_gravity="center"
-                            android:src="@drawable/project5"/>
+                            android:src="@drawable/project5"
+                            android:contentDescription="@null"/>
                         <TextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
@@ -375,7 +391,8 @@
                                 android:layout_width="13dp"
                                 android:layout_height="15dp"
                                 android:src="@drawable/next"
-                                android:layout_marginTop="11dp"/>
+                                android:layout_marginTop="11dp"
+                                android:contentDescription="@null"/>
                         </LinearLayout>
                     </LinearLayout>
 

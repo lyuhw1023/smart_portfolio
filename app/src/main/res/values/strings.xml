@@ -12,8 +12,12 @@
     <string name="score">성적\nA+\nA0\nA+\nA+\nA+\nA0\nA0\nA+\nA+\nA+\nA0\nA+\n</string>
     <string name="activity">2020년도 1학기 신입생 몰입형 SW코딩캠프\n2020년도 2학기 인공지능 교육 특강 수료\nCodeit 대학생 코딩 캠프 7기 수료 (2021.6.23~ 2021.7.23)\n2022년도 1학기 SW교과목 멘토링(컴퓨팅사고 AI기초) 멘토\n2022년도 1학기 디딤돌 멘토링 멘토\n2022년도 1학기 SW전공 멘토링(파이썬) 멘토\n2022년도 2학기 SW전공 멘토링(창의코딩웹) 멘토\n2022년도 정보과학대학 학술동아리 노네임 회장\n2022년도 정보과학대학 서공제 아이디어 부문 장려상\n</string>
     <string name="career">2020년도 제 2대 소프트웨어융합대학 학생회 STEP 체육부원\n2020년도 교내 소프트웨어융합대학 학술동아리 노네임 활동\n2021년도 제 3대 소프트웨어융합대학 학생회 WUSM 체육부장\n2021년도 창업동아리 트라움 활동\n2022년도 제 4대 정보과학대학 학생회 A:BLE 기획국장\n2022년도 교내 정보과학대학 학술동아리 노네임 회장\n2022년 한림대학교 대동제 그,_림 축제준비위원회 밤부스팀 활동\n</string>
-    <string name="isMainText">안녕하세요.성장하는 개발자, 유혜원입니다.\n아직 부족한 부분이 많지만 항상 노력하며 나아가는 개발자입니다.현재 한림대학교 정보과학대학 빅데이터 전공에 재학중이며
-                                학술동아리 노네임에서 회장을 맡아 열심히 동아리를 가꾸어나가고 있습니다.웹과 앱을 개발하는 것에 대해 관심이 많고 현재 프론트엔드와 백엔드 두가지에 대해 열심히 공부중에 있습니다.</string>
+
+
+    <string name="MainText">유혜원 | Android Developer</string>
+    <string name="isMainText">끝없이 인내하고 끝없이 노력하고 끝없이 겸손하자.  <b>안드로이드 개발자 유혜원</b>입니다.</string>
+
+
     <string name="projectTitle1">SmartPortfolio</string>
     <string name="projectTitle2">자리있나요?</string>
     <string name="projectTitle3">Healing Blog</string>

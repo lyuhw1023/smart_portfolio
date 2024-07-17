@@ -53,7 +53,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="sw개발에 있어 필요한 여러 관련 분야의 이론적인 근간이 되는 수학적인 기반 지식을 습득하고, 해당 분야와의 관련성에 대하여 학습한다."
-                            android:textSize="13dp"
+                            android:textSize="13sp"
                             android:layout_marginRight="5dp"
                             android:layout_marginLeft="5dp"
                             android:layout_gravity="center"/>
@@ -97,7 +97,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="대표적인 객체 지향 프로그래밍 언어인 자바에 대해 학습함으로서 자바를 이용한 프로그램 개발 역량을 키운다."
-                            android:textSize="13dp"
+                            android:textSize="13sp"
                             android:layout_marginRight="5dp"
                             android:layout_marginLeft="5dp"
                             android:layout_gravity="center"/>
@@ -141,7 +141,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="컴퓨팅 사고에 근거한 문제 해결 역량을 키우고, 최종적으로 일상 속에서 사용되는 소프트웨어를 이해한다."
-                            android:textSize="13dp"
+                            android:textSize="13sp"
                             android:layout_marginRight="5dp"
                             android:layout_marginLeft="5dp"
                             android:layout_gravity="center"/>
@@ -185,7 +185,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="선형대수학의 기초에 해당하는 행렬, 벡터, 선형변혼 등의 이론을 배우고 기초적인 연산을 수행하는 방법을 배운다."
-                            android:textSize="13dp"
+                            android:textSize="13sp"
                             android:layout_marginRight="5dp"
                             android:layout_marginLeft="5dp"
                             android:layout_gravity="center"/>
@@ -229,7 +229,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="웹 사이트의 제작 과정을 이해하고 최신 경향의 동적 웹 프로그래밍 기술로 나아가기 위한 기술 습득을 목적으로 자바스크립트를 학습한다."
-                            android:textSize="13dp"
+                            android:textSize="13sp"
                             android:layout_marginRight="5dp"
                             android:layout_marginLeft="5dp"
                             android:layout_gravity="center"/>
@@ -273,7 +273,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="컴퓨터를 이용한 문제 해결의 근간이 되는 자료구조의 개념을 배운다. Java언어를 이용한다."
-                            android:textSize="13dp"
+                            android:textSize="13sp"
                             android:layout_marginRight="5dp"
                             android:layout_marginLeft="5dp"
                             android:layout_gravity="center"/>
