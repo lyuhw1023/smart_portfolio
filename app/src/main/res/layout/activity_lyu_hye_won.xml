@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Class"
+    tools:context=".LyuHyeWon"
     android:id="@+id/drawer">
     <LinearLayout
         android:layout_width="match_parent"
@@ -17,12 +17,13 @@
             android:layout_height="?attr/actionBarSize"
             android:background="?attr/colorPrimary"
             android:id="@+id/toolbar"
-            app:title="Class"/>
+            app:title="LyuHyeWon"/>
         <!--탭 메뉴 설정-->
         <com.google.android.material.tabs.TabLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/tabs"/>
+            android:id="@+id/tabs"
+            android:contentDescription="Tab layout for navigation"/>
         <!--좌우로 이동 가능하도록 뷰페이저 설정-->
         <androidx.viewpager2.widget.ViewPager2
             android:layout_width="match_parent"
