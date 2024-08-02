@@ -1,7 +1,6 @@
 # Smart Portfolio
 2022년도 (주)더존비즈온 Smart Portfolio 프로젝트 & 한림대학교 모바일 프로그래밍  
 본선 진출 작품  
-[수정된 Smart Portfolio 보러가기](https://github.com/lyuhw1023/smart_portfolio_2.git)
 ***  
 <br/>
 
