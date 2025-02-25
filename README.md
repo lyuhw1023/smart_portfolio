@@ -45,8 +45,8 @@
 <img src="https://user-images.githubusercontent.com/52669844/207296274-2ea18a7c-2a96-43fe-bdae-30104b96c8a1.jpg" width="200px"/>
 </div>
 
- - 카드뉴스를 통해 내용 확인 가능
- - '프로젝트 보러가기' 텍스트 클릭 시 상세 페이지 확인 가능
+ - 카드뉴스를 통해 내용 확인이 가능하다.
+ - '프로젝트 보러가기' 텍스트 클릭 시 상세 페이지 확인이 가능하다.
  <br/>
 
 ## LyuHyeWon, Class 화면   
@@ -55,7 +55,7 @@
 <img src="https://user-images.githubusercontent.com/52669844/207789969-3d7f6976-5761-43cc-8db3-cb5aa8a72d72.jpg" width="200px"/>
 </div>
 
-- 화면 좌우 넘김으로 두 가지 화면 편라하게 확인 가능
+- 화면 좌우 넘김으로 두 가지 화면 편라하게 확인이 가능하다.
 - 학교 생활, 수업내용, 수업성적 등에 대한 내용이 담겨있다.
 <br/>
 
@@ -76,5 +76,5 @@
 <img src="https://user-images.githubusercontent.com/52669844/207793602-51a6c823-236f-4c55-a57b-9b45f1b53bda.jpg" width="200px"/>
 </div>
 
-- 내부 웹뷰 or 외부 웹브라우저를 선택하는 기능
+- 내부 웹뷰 or 외부 웹브라우저를 선택하는 기능을 제공한다.
 - (내부) Webview, (외부) Chrome
